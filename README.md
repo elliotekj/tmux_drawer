@@ -44,7 +44,7 @@ The plugin does not set up any default keybindings. You must add your own
 keybinding to your Tmux config. For example:
 
 ```tmux
-bind-key T run-shell "~/.tmux/plugins/tmux_drawer/tmux_drawer.tmux"
+bind-key T run-shell "~/.tmux/plugins/tmux_drawer/tmux_drawer.tmux toggle"
 ```
 
 ### Customizing Drawer Width
@@ -53,7 +53,7 @@ You can specify a custom width for the drawer by adjusting your keybinding in `~
 
 ```tmux
 # Set drawer width to 30% of window
-bind-key T run-shell "~/.tmux/plugins/tmux_drawer/tmux_drawer.tmux '' 30"
+bind-key T run-shell "~/.tmux/plugins/tmux_drawer/tmux_drawer.tmux toggle 30"
 ```
 
 ## License

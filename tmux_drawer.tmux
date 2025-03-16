@@ -179,12 +179,10 @@ init() {
 # Main Execution
 # -------------------------
 
-main() {
-    toggle_drawer
-}
-
-# Execute initialization and main if not running in "bind" mode.
 if [[ "$1" != "bind" ]]; then
     init
-    main
+fi
+
+if [[ "$1" == "toggle" ]]; then
+    toggle_drawer
 fi
